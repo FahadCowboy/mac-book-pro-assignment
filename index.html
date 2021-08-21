@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Pro</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Total main sectin  -->
+    <main class="w-full">
+        <section class="flex space w-10/12 mx-auto my-8">
+
+            <!-- Here is MacBook Image -->
+            <div id="left" class="">
+                <img src="images/mac.png" alt="This is an image of Mac Book pro.">
+            </div>
+
+            <!-- Right Part of the document -->
+            <div id="right-part" class="ml-32 w-11/12">
+                <!-- Header and Description about MacBook -->
+                <div class="mb-6">
+                    <h1 class="font-medium mb-2 text-4xl">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+                </div>
+
+                <!-- Main buttons parent -->
+                <div id="buttons-parent">
+                    <div class="mb-6">
+                        <h3 class="font-bold mb-2">Mamory</h3>
+                        <button id="btn-8gb" class="border border-black rounded p-1.5 mr-2 hover:text-white focus:ring-2 focus:ring-gray-700 hover:bg-gray-700">8GB unified memory</button>
+                        <button id="btn-16gb" class="border border-black rounded p-1.5 mr-2 hover:text-white focus:ring-2 focus:ring-gray-700 hover:bg-gray-700">16GB unified memory</button>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="font-bold mb-2">Storage</h3>
+                        <button id="btn-256gb" class="border border-black rounded p-1.5 mr-2 hover:text-white focus:ring-2 focus:ring-gray-700 hover:bg-gray-700">256GB SSD storage</button>
+                        <button id="btn-512gb" class="border border-black rounded p-1.5 mr-2 hover:text-white focus:ring-2 focus:ring-gray-700 hover:bg-gray-700">512GB SSD storage</button>
+                        <button id="btn-1tb" class="border border-black rounded p-1.5 mr-2 hover:text-white focus:ring-2 focus:ring-gray-700 hover:bg-gray-700">1TB SSD storage</button>
+                    </div class="mb-6">
+
+                    <div class="mb-6">
+                        <h3 class="font-bold mb-2">Choose your delivery option</h3>
+                        <button id="btn-delivery-free" class="border border-black rounded p-1.5 mr-2 hover:text-white focus:ring-2 focus:ring-gray-700 hover:bg-gray-700">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="btn-delivery-charged" class="border border-black rounded p-1.5 mr-2 hover:text-white focus:ring-2 focus:ring-gray-700 hover:bg-gray-700">Friday, Aug 21 Delivery charge $20</button>
+                    </div>
+                </div>    
+ 
+                <!-- Extra price calculation section  -->
+                <div>
+                    <ul class="font-semibold mb-6">
+                        <li class="flex w-72 justify-between p-1.5 border-b-2 border-gray-200">
+                            <p>Best Price</p>
+                            <p class="w-14">&<span id="best-price">1299</span></p>
+                        </li>
+                        <li class="flex w-72 justify-between p-1.5 border-b-2 border-gray-200">
+                            <p>Extra Memory Cost</p>
+                            <p class="w-14">$<span id="extra-mamory-cost">0</span></p>
+                        </li>
+                        <li class="flex w-72 justify-between p-1.5 border-b-2 border-gray-200">
+                            <p>Extra Storage Cost</p>
+                            <p class="w-14">$<span id="extra-storage-cost">0</span></p>
+                        </li>
+                        <li class="flex w-72 justify-between p-1.5 border-b-2 border-gray-500">
+                            <p>Delivery charge</p>
+                            <p class="w-14">$<span id="delivery-charge">0</span></p>
+                        </li>
+                        <li class="flex w-72 justify-between p-1.5">
+                            <p>Total Price</p>
+                            <p class="w-14">$<span id="total-price">1299</span></p>
+                        </li>
+                    </ul>
+
+                    <!-- Promo code applicatin section -->
+                    <div>
+                        <p>Add Pomo code</p>
+                        <div class="flex items-center">
+                            <input class="border border-gray-600 p-2 rounded-l-md text-base" type="text" name="" id="promo-input">
+                            <button id="promo-btn" class="bg-red-700 text-white text-base py-2 px-3 rounded-r-md focus:ring-2 focus:ring-red-400">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Total price after giving promo code. -->
+        <section class="w-10/12 mx-auto border-t-2 border-gray-300 mt-5 p-5 text-4xl font-medium text-center">
+            <p>Total: $<span id="total-price-Mega">1299</span></p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
